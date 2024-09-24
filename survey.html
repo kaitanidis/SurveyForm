@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Great Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <container class="survey-container">
+  <h1 id="title"><span id="title">A Great Survey</span></h1>
+  <p id="description">Share your thoughts with us!</p>
+  <form id="survey-form" method="post" action='#'>
+    <fieldset>
+      <label for="name" id="name-label">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+
+      <label for="number" id="number-label">Your Age:</label>
+      <input type="number" id="number" name="number" min="18" max="100" placeholder="Enter your age (18-100)">
+
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="dropdown">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3 (Optional)</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>How likely are you to recommend us?</legend>
+      <label for="radio1">
+        <input type="radio" id="radio1" name="recommendation" value="highlyLikely" class="inline" checked>
+        Highly Likely
+      </label>
+      <label for="radio2">
+        <input type="radio" id="radio2" name="recommendation" value="somewhatLikely" class="inline">
+        Somewhat Likely
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <p>What features do you like?</p>
+      <label for="checkbox1">
+        <input type="checkbox" id="checkbox1" name="features[]" value="feature1" class="inline">
+        Feature 1
+      </label>
+      <label for="checkbox2">
+        <input type="checkbox" id="checkbox2" name="features[]" value="feature2" class="inline">
+        Feature 2
+      </label>
+      <label for="checkbox3">
+        <input type="checkbox" id="checkbox3" name="features[]" value="feature3" class="inline">
+        Feature 3
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts here"></textarea>
+    </fieldset>
+
+    <button type="submit" id="submit">Submit Survey</button>
+
+  </form>
+</container>
+</body>
+</html>
